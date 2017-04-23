@@ -7,5 +7,6 @@ heroku login
 heroku container:login
 mvn clean install
 heroku container:push -a heerproductservice;
+heroku ps:scale web=1 -a <application-name>
 
 heroku url:https://heerproductservice.herokuapp.com/people
