@@ -1,0 +1,4 @@
+applications:
+  - name: productsrive
+    buildpack: java_buildpack
+    path: target/productserive-0.0.1-SNAPSHOT.jar

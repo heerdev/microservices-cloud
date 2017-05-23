@@ -1,0 +1,78 @@
+<div class="container">
+<md-toolbar color="primary">
+  <span>Manage your products</span>
+  </md-toolbar>
+<div>
+
+<md-tab-group (focusChange)="changeTab($event)">
+        <md-tab>
+              
+                <template  md-tab-label>
+                  Product List
+                   
+                </template>
+              
+            </md-tab>
+                  <md-tab>
+              
+                <template  md-tab-label>
+                  Add Product
+                   
+                </template>
+              
+            </md-tab>
+            <md-tab>
+
+                <template  md-tab-label>
+                  Dashboard
+                   
+                </template>
+              
+            </md-tab>
+            
+            <md-tab>
+                    <template md-tab-label>
+                        Batch-View
+                    </template>
+                    {{app-batchview}}
+                   
+                </md-tab>
+         
+            </md-tab-group>
+ </div>
+<div *ngIf="showProductlist">
+ <app-productlist></app-productlist>
+ </div>             
+</div>
+<div *ngIf="showDashboard">
+ <app-dashboard></app-dashboard>
+ </div>  
+
+ <div *ngIf="showBatchView">
+ <app-batchview></app-batchview>
+ </div>  
+<router-outlet></router-outlet>
+
+     <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+       
+              
+              </div>
+              <div class="col l4 offset-l2 s12">
+          
+                <ul>
+           
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Heer Software
+            <a class="grey-text text-lighten-4 right" href="#!">Linkedin</a>
+            </div>
+          </div>
+        </footer>
+    <div>    

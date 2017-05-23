@@ -1,0 +1,9 @@
+{
+  "firebase": "manage-products",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

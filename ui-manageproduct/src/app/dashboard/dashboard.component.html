@@ -1,0 +1,90 @@
+<div class="container">
+<md-card>
+    <b> Plrease refer below the overall status of tests!</b>
+    </md-card>
+<table id="example" class="mdl-data-table" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Batch Name</th>
+                <th>Status</th>
+                <th>Result Page</th>
+                <th>Run Date</th>
+               
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Batch1 :- Manage Assets - 1</td>
+                <td *ngIf="batch1">{{batch1.status}}</td>
+                <td><a target="_blank" href="https://ar-batch1-3ab3a.firebaseapp.com/chrome">click here</a></td>
+                <td *ngIf="batch1">{{batch1.currTime}}</td>
+                
+            </tr>
+                 <tr>
+                <td>Batch2 :- Manage Assets - 2</td>
+               <td *ngIf="batch2">{{batch2.status}}</td>
+                <td><a target="_blank" href="https://ar-batch2.firebaseapp.com/chrome">click here</a></td>
+                <td *ngIf="batch2">{{batch2.currTime}}</td>
+                
+            </tr>
+                 <tr>
+                <td>Batch3 :- Manage Assets - 3 </td>
+                <td *ngIf="batch3">{{batch3.status}}</td>
+                <td><a target="_blank" href="https://ar-batch3.firebaseapp.com/chrome">click here</a></td>
+                <td *ngIf="batch3">{{batch3.currTime}}</td>
+                
+            </tr>
+                 <tr>
+                <td>Batch4 :- Asset Types - 1</td>
+                <td *ngIf="batch4">{{batch4.status}}</td>
+                   <td><a target="_blank" href="https://ar-batch4.firebaseapp.com/chrome">click here</a></td>
+                <td *ngIf="batch4">{{batch4.currTime}}</td>
+                
+            </tr>            
+                <tr>
+                <td>Batch5 :- Asset Types - 2</td>
+                <td *ngIf="batch5">{{batch5.status}}</td>
+                   <td><a target="_blank" href="https://ar-batch5.firebaseapp.com/chrome">click here</a></td>
+                <td *ngIf="batch5">{{batch5.currTime}}</td>
+                
+            </tr>
+            <tr>
+                <td>Batch6 :- Categories</td>
+                <td *ngIf="batch6">{{batch6.status}}</td>
+                   <td><a target="_blank" href="https://assetrabbit-qa.firebaseapp.com/batch6/chrome">click here</a></td>
+                <td *ngIf="batch6">{{batch6.currTime}}</td>
+                
+            </tr>
+            <tr>
+                <td>Batch7 :- Users - 1</td>
+                <td *ngIf="batch7">{{batch7.status}}</td>
+                   <td><a target="_blank" href="https://ar-batch7.firebaseapp.com/batch7/chrome">click here</a></td>
+                <td *ngIf="batch7">{{batch7.currTime}}</td>
+                
+            </tr>
+            <tr>
+                <td>Batch8 :- Users - 2</td>
+                <td *ngIf="batch8">{{batch8.status}}</td>
+                   <td><a target="_blank" href="https://ar-batch8.firebaseapp.com/batch8/chrome">click here</a></td>
+                <td *ngIf="batch8">{{batch8.currTime}}</td>
+                
+            </tr>
+                 <tr>
+                <td>Android</td>
+                <td>Completed</td>
+                   <td><a target="_blank" href="https://ar-galaxy-s6.firebaseapp.com/chrome">click here</a></td>
+                <td>today</td>
+                
+            </tr>
+      
+                 <tr>
+                <td>iPad</td>
+                <td>Completed</td>
+                   <td><a target="_blank" href="https://ar-ipad.firebaseapp.com/chrome">click here</a></td>
+                <td>today</td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
